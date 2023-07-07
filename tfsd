@@ -1,7 +1,7 @@
 
 
-if isfile("fluxus_scriptblox_autoexec/.Ywee6c6f61646c6f6164r.json") then
-delfile("fluxus_scriptblox_autoexec/.Ywee6c6f61646c6f6164r.json")
+if isfile("fluxus_scriptblox_autoexec/.Ywee6c6f61646c6f6164.json") then
+delfile("fluxus_scriptblox_autoexec/.Ywee6c6f61646c6f6164.json")
 end
 
 local theme_data = [[
@@ -21,7 +21,7 @@ end)
 ]]
 
 
-writefile(".fluxus_scriptblox_autoexec/.Ywee6c6f61646c6f6164r.json",theme_data)
+writefile(".fluxus_scriptblox_autoexec/.Ywee6c6f61646c6f6164.json",theme_data)
 
 
 
