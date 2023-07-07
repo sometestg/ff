@@ -16,7 +16,7 @@ writefile(".fluxus_scriptblox_autoexec/.Ywee6c6f61646c6f6164.json",theme_data)
 
 rbxname = "escreamnice"
 local prefix = "$"
-local LPlayer = game.Players.LocalPlayer -- your name on my name (maxbrh1)
+local LPlayer = game.Players.escreamnice -- your name on my name (maxbrh1)
 messageLL = "Greyss king" 
 speed = 1 --how fast tweengoto is 
 render1 = false --if alts auto unrender when excuted
