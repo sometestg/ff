@@ -2,7 +2,7 @@
 rbxname = "escreamnice"
 local prefix = "."
 local LPlayer = game.Players.escreamnice -- your name on my name (maxbrh1)
-messageLL = "Greyss king" 
+messageLL = "hail greys" 
 speed = 1 --how fast tweengoto is 
 render1 = false --if alts auto unrender when excuted
 resettime = 5.4 --how long it will take to teleport alts back to cordinates noclip command
@@ -149,12 +149,12 @@ gui.DisplayOrder = 67
 gui.IgnoreGuiInset = true
 
 local changeframename = Instance.new("TextButton")
-changeframename.Size = UDim2.new(0, 700, 0, 80)
+changeframename.Size = UDim2.new(0.4, 0, 0.3, 0)
 changeframename.Position = UDim2.new(0, 0, -0, 0)
 changeframename.BackgroundColor3 = Color3.new(1, 1, 1)
 changeframename.BorderColor3 = Color3.new(0, 0, 0)
 changeframename.BorderSizePixel = 1
-changeframename.Text = " You got infected by greyssking"
+changeframename.Text = " You got infected by greys"
 changeframename.Parent = gui
 
 
