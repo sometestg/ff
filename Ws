@@ -1,4 +1,4 @@
-local friend = {
+getgenv().fri = {
 6047182514,
 5687644470
 }
